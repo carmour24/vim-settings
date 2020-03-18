@@ -1,0 +1,41 @@
+{
+  "languageserver": {
+	"elmLS": {
+	  "command": "elm-language-server",
+	  "filetypes": [
+		"elm"
+	  ],
+	  "rootPatterns": [
+		"elm.json"
+	  ],
+	  "initializationOptions": {
+		"elmPath": "elm", // optional
+		"elmFormatPath": "elm-format", // optional
+		"elmTestPath": "elm-test", // optional
+		"elmAnalyseTrigger": "change" // optional
+	  }
+	},
+	"kotlin": {
+	  "command": "/usr/local/share/kotlin-language-server/server/build/install/server/bin/kotlin-language-server",
+	  "filetypes": [
+		"kotlin"
+	  ]
+	},
+	"jsLangserver": {
+	  "command": "node",
+	  "args": ["~/.local/share/nvim/plugged/js-langserver/index.js", "--stdio"],
+	  "filetypes": [
+		"javascript",
+		"javascript.jsx"
+	  ]
+	}
+  },
+  "tsserver.enableJavascript": true,
+  "codeLens.enable": true,
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "json", "javascriptreact", "elm", "javascript.jsx"],
+  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact"],
+  "eslint.autoFixOnSave": true,
+  "emmet.includeLanguages": {
+	"dustjs": "javascriptreact"
+  }
+}
